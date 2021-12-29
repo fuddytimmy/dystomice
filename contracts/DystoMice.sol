@@ -45,7 +45,7 @@ contract DystoMice is ERC721URIStorage, Ownable{
         DysToken = token;
     }
 
-    // Timur: We can only increase the total supply when all the mice have been minted. 
+    // We can only increase the total supply when all the mice have been minted. 
     // Looks like when the max is met anyone can increase the total supply up to 8,000.
     function increaseTotalSupply(uint256 amount) public {
         require(totalMice == totalCount, "need more mints");
