@@ -23,7 +23,7 @@ const ALCHEMY_API_KEY = secrets.alchemy_api_key;
 // To export your private key from Metamask, open Metamask and
 // go to Account Details > Export Private Key
 // Be aware of NEVER putting real Ether into testing accounts
-const ROPSTEN_PRIVATE_KEY = secrets.ropsten_key;
+const METAMASK_PRIVATE_KEY = secrets.metamask_private_key;
 const ETHERSCAN_API_KEY = secrets.etherscan_key;
 
 module.exports = {
@@ -31,7 +31,7 @@ module.exports = {
   networks: {
     ropsten: {
       url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      accounts: [`${ROPSTEN_PRIVATE_KEY}`]
+      accounts: [`${METAMASK_PRIVATE_KEY}`]
     }
   },
   etherscan: {

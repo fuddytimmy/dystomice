@@ -1,4 +1,3 @@
-// constructor.js
 module.exports = [
     "DystoMice",
     "DYSTOMICE",
